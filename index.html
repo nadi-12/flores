@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños Nayely</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'Arial', sans-serif;
+            background-color: #6fa4ff; /* Fondo cálido */
+            overflow: hidden;
+        }
+
+        /* Contenedor del mensaje */
+        .mensaje-container {
+            text-align: center;
+            padding: 20px;
+            max-width: 800px;
+            border-radius: 15px; /* Bordes redondeados */
+            
+        }
+
+        /* Texto de felicitación */
+        .felicitacion {
+            color: #ff6347; /* Color cálido (tomate) */
+            font-size: 3em;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+            animation: aparecer 5s ease-in-out infinite;
+        }
+
+        /* Animación de texto que aparece y desaparece */
+        @keyframes aparecer {
+            100%, 100% {
+                opacity: 0;
+                transform: scale(0.8);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Mensaje lindo */
+        .mensaje-lindo {
+            font-size: 1.5em;
+            color: #000000;
+            margin-top: 20px;
+            line-height: 1.5em;
+        }
+
+        /* Contenedor de imágenes */
+        .imagenes {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        /* Estilo de las imágenes */
+        .imagenes img {
+            width: 150px;
+            height: 300px;
+            margin: 0 10px;
+            border-radius: 50%;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out, opacity 2s ease-in-out;
+            opacity: 0; /* Ocultar las imágenes al principio */
+            animation: fadeIn 2s forwards; /* Animación de aparición */
+        }
+
+        /* Efecto hover para las imágenes */
+        .imagenes img:hover {
+            transform: scale(1.2); /* Aumentar el tamaño al pasar el cursor */
+        }
+
+        /* Animación de aparición */
+        @keyframes fadeIn {
+            100% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="mensaje-container">
+        <!-- Texto de felicitación -->
+        <div class="felicitacion">
+            ¡Feliz Cumpleaños Nayely! 🎉🌻
+        </div>
+
+        <!-- Mensaje lindo -->
+        <div class="mensaje-lindo">
+            ¡Feliz cumpleaños, mi compañera de aventuras! Desde pequeñas hemos compartido tantos momentos especiales y sé que en estos momentos no me encuentro contigo pero realmente espero que hoy lo hayas pasado increíble recuerda que tienes muchas personas que te quieren y admiran tu valentía. Eres una inspiración para mí y estoy muy orgullosa de todo lo que has logrado. Que este nuevo año te traiga muchas alegrías y oportunidades para que tu sigas brillando. ¡Te quiero mucho!
+Espero que te guste este pequeño detalle. 🌟💖
+        </div>
+
+        <!-- Imágenes decorativas -->
+        <div class="imagenes">
+            <img src="f1.jpg" alt="f1">
+            <img src="f2.jpg" alt="f2">
+            <img src="f3.jpg" alt="f3">
+        </div>
+    </div>
+</body>
+</html>
